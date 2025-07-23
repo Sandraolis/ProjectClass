@@ -1,1 +1,27 @@
-This is my first build
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+
+        stage('docker') {
+            steps {
+                echo 'Docker pipeline'
+            }
+        }
+        stage('kubernetes') {
+            steps {
+                echo 'Kubernetes pipeline'
+            }
+        }
+        stage('Javascript') {
+            steps {
+                echo 'Javascript pipeline'
+            }
+        }
+    }
+}
