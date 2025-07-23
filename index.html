@@ -23,5 +23,10 @@ pipeline {
                 echo 'Javascript pipeline'
             }
         }
+        stage('Terraform') {
+            steps {
+                echo 'terraform pipeline'
+            }
+        }
     }
 }
